@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <script type="text/javascript" src="./js/http.js"></script>
+    <script type="text/javascript" src="./js/renders.js"></script>
+    <title>Title</title>
+</head>
+<body>
+<main class="page">
+    <aside class="side-bar" id="sidebar">
+        <div class="side-bar__header">
+            <img src="times-solid.svg" alt="" class="icon" id="menu-close">
+            <a href="index.html"><h1 class="header-logo">Book store</h1></a>
+        </div>
+        <div class="side-bar__btn" id="addBook">Add book</div>
+    </aside>
+    <header class="header-wrapper">
+        <!--<img src="bars-solid.svg" alt="" class="icon" id="menu">-->
+        <div class="container">
+            <div class="header">
+                <a href="index.html"><h1 class="header-logo">Book store</h1></a>
+                <!--<input type="text" placeholder="Search" class="header-search">-->
+            </div>
+        </div>
+        <!--<img src="shopping-cart-solid.svg" alt="" class="icon">-->
+    </header>
+    <div class="container">
+        <div class="page-container" id="page-container">
+            <div class="book-item">
+                <img src="#" alt="" class="book-item__img">
+                <div>
+                    <div class="modal-content__btn item" id="delete">Delete book</div>
+                    <div class="modal-content__btn item" id="edit">Edit book</div>
+                    <div id="info-edit" style="display: none">
+                        <p class="modal-content__title">Book name</p>
+                        <input type="text" class="modal-content__field item" id="name">
+                        <p class="modal-content__title">Author</p>
+                        <input type="text" class="modal-content__field item" id="author">
+                        <p class="modal-content__title">Year</p>
+                        <input type="date" id="date" class="modal-content__field item"></input>
+                        <div class="modal-content__btn item" id="confirm" style="margin-top: 10px">confirm</div>
+                    </div>
+                    <div id="info">
+                        <h2 class="book_name">Name</h2>
+                        <p class="book_author">Author</p>
+                        <p class="book_year">Year</p>
+                        <p class="book_publishing">Publishing house</p>
+                        <!--<p class="book_genre"></p>-->
+                        <p class="book_price" style="color: lawngreen;font-size: 1.4rem"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+<script src="./js/book-item.js"></script>
+</html>

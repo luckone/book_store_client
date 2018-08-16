@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book store</title>
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <script type="text/javascript" src="./js/http.js"></script>
+    <script type="text/javascript" src="./js/renders.js"></script>
+</head>
+<body>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-content__header">
+                <div class="modal-content__placeholder" id="placeholder"></div>
+                <div class="modal-content__btn">Upload preview</div>
+                <input type="file" class="modal-content__upload" id="upload" accept="image/*">
+                <img src="#" alt="" class="modal-content__preview" id="preview">
+            </div>
+            <div class="modal-content__body">
+                <p class="modal-content__title">Book name</p>
+                <input type="text" id="name" class="modal-content__field">
+                <p class="modal-content__title">Author</p>
+                <input type="text" id="author" class="modal-content__field">
+                <p class="modal-content__title">Year</p>
+                <input type="date" class="modal-content__field" id="date">
+                <p class="modal-content__title">Genre</p>
+                <div class="modal-content__field" id="tags-container">
+                    <input type="text" class="hidden-input" id="tags">
+                </div>
+                <p class="modal-content__title">Publishing house</p>
+                <input id="published" class="modal-content__field" type="text" />
+                <p class="modal-content__title">Price</p>
+                <input type="Number" id="price" class="modal-content__field">
+            </div>
+            <div class="modal-content__footer" id="createBtn">Publish</div>
+        </div>
+    </div>
+    <main class="page">
+        <aside class="side-bar" id="sidebar">
+            <div class="side-bar__header">
+                <img src="./assets/icons/times-solid.svg" alt="" class="icon" id="menu-close">
+                <h1 class="header-logo">Book store</h1>
+            </div>
+            <div class="side-bar__btn" id="addBook">Add book</div>
+        </aside>
+        <header class="header-wrapper">
+            <img src="./assets/icons/bars-solid.svg" alt="" class="icon" id="menu">
+            <div class="container">
+                <div class="header">
+                    <h1 class="header-logo">Book store</h1>
+                    <!--<input type="text" placeholder="Search" id="search" class="header-search">-->
+                </div>
+            </div>
+            <!--<img src="./assets/icons/shopping-cart-solid.svg" alt="" class="icon">-->
+        </header>
+        <div class="container">
+            <div class="page-container" id="page-container">
+                <template id="card-template">
+                    <div class="card">
+                        <img src="5aAPN3CjiDn5qBzP4EihnTq2.png" alt="" class="card-img">
+                        <div class="card-body">
+                            <h2 class="card-name">Moby Dick</h2>
+                            <span class="card-author">Ch. Dickens</span>
+                            <span class="card-year">1967</span>
+                            <div class="tags">
+                            </div>
+                            <p class="card-published">Publishing house:&nbsp;<span class="card-published_name">HarperCollins</span></p>
+                        </div>
+                        <div class="card-footer">
+                           <h3 class="card-purchase"></h3>
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="./js/main.js"></script>
+<script>
+
+</script>
+</html>
